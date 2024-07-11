@@ -1,0 +1,72 @@
+<% layout('layouts/boilerplate') %>
+
+
+<div class="row">
+    <%- include('../partials/flash') %>
+    <div class="col-md-6 mx-auto">
+        <h1 class="display-6">Sign Up</h1>
+
+        <form action="/register" method="post" class="needs-validation">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" name="username" class="form-control" id="username" placeholder="Username" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter the name of Product.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter the name of Product.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <p class="mb-2">Want to register as ?</p>
+                <div class="mx-2">
+                    <label for="buyer" class="form-label">Buyer :</label>
+                    <input type="radio" class="form-check-input" name="role" id="buyer" value="buyer" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter the name of Product.
+                    </div>
+                </div>
+                <div class="mx-2">
+                    <label for="seller" class="form-label">Seller :</label>
+                    <input type="radio" class="form-check-input" name="role" id="seller" value="seller" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter the name of Product.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter the name of Product.
+                </div>
+            </div>
+
+            <button class="btn btn-sm btn-success" type="submit">Sign Up</button>
+
+            <p class="fw-light mt-2">Already Have an Account, <a href="/login">Log In</a></p>
+        </form>
+    </div>
+</div>

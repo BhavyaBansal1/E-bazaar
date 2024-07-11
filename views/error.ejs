@@ -1,0 +1,68 @@
+<% layout('layouts/boilerplate') %>
+<%- include('./partials/navbar') %>
+
+    <style>
+        body {
+            background: lightgray;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin: 5px auto;
+        }
+
+        img {
+            border: none;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: red;
+            margin: 15px;
+            text-shadow: 0 0 2px black;
+            text-transform: uppercase;
+        }
+
+        .fullscreen-image {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Image Slideshow</h1>
+    <h3>Enjoy the view!</h3> -->
+    <div class="container-fluid">
+        <img src="https://th.bing.com/th/id/OIP.m1b0lTXaFOSihsFcHQhAZAHaFp?w=281&h=214&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Fullscreen Image" class="fullscreen-image" id="slideshow-image">
+    </div>
+<!-- 
+    <script>
+        const images = [
+            'https://th.bing.com/th?id=OIP.PYipJ_hSncugM2SwnZitvgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2',
+            'https://th.bing.com/th?id=OIP._n8T4Vc7DOemZlOFLftg2wHaEo&w=333&h=207&c=7&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2',
+            'https://th.bing.com/th?id=OIP.W_k-ucWXbY_kYNmf28C38AHaEo&w=333&h=207&c=7&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2'
+            // Add more image URLs here
+        ];
+
+        let currentIndex = 0;
+        const slideshowImage = document.getElementById('slideshow-image');
+        const changeInterval = 1000; // Time in milliseconds
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            slideshowImage.src = images[currentIndex];
+        }
+
+        setInterval(changeImage, changeInterval);
+    </script> -->
+<!-- </body>
+</html> -->
